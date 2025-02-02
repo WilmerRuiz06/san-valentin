@@ -16,7 +16,7 @@
             height: 100vh;
             background: url('imagenes/sanvalentin.jpg') no-repeat center center/cover;
             text-align: center;
-            font-family: 'Poppins', sans-serif; /* Cambié la fuente aquí */
+            font-family: 'Poppins', sans-serif; /* Fuente Poppins */
         }
         .container {
             background: rgba(223, 7, 43, 0.521);
@@ -28,6 +28,7 @@
         h1 {
             color: rgb(238, 238, 238);
             font-size: 2em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agregar sombra sutil al texto */
         }
         .buttons {
             margin-top: 20px;
@@ -62,6 +63,7 @@
             color: white;
             margin-bottom: 20px;
             font-size: 1.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
         }
         .gif-container iframe {
             width: 80%; /* Usamos un porcentaje para que se adapte al ancho disponible */
@@ -72,7 +74,7 @@
     <script>
         function respuestaSi() {
             document.body.innerHTML = "<div class='gif-container'>" +
-                "<h2>Ya sabía que sí, mi amor. Nos vemos el 17 <3</h2>" +
+                "<h2>Ya sabía que sí mi amor. Nos vemos el 17 mi niña <3</h2>" +
                 "<iframe src='https://tenor.com/embed/8852310440228889797' frameBorder='0' class='tenor-gif-embed' allowFullScreen></iframe>" +
                 "</div>";
         }
@@ -103,3 +105,4 @@
     </div>
 </body>
 </html>
+
