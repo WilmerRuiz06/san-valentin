@@ -20,6 +20,8 @@
             background: rgba(223, 7, 43, 0.521);
             padding: 20px;
             border-radius: 10px;
+            width: 90%;
+            max-width: 400px; 
         }
         h1 {
             color: rgb(238, 238, 238);
@@ -60,14 +62,15 @@
             font-size: 1.5em;
         }
         .gif-container iframe {
-            width: 100px;
-            height: 100px;
+            width: 80%; 
+            max-width: 150px; 
+            height: auto;
         }
     </style>
     <script>
         function respuestaSi() {
             document.body.innerHTML = "<div class='gif-container'>" +
-                "<h2>Ya sabía que sí mi amor. Nos vemos el 17 <3</h2>" +
+                "<h2>Ya sabía que sí, mi amor. Nos vemos el 17 <3</h2>" +
                 "<iframe src='https://tenor.com/embed/8852310440228889797' frameBorder='0' class='tenor-gif-embed' allowFullScreen></iframe>" +
                 "</div>";
         }
@@ -87,9 +90,8 @@
 <body>
     <div class="container">
         <h1>¿Le gustaría ser mi San Valentín, preciosa?</h1>
-        <!-- Primer cambio: El GIF de "Rizz" con tamaño 100x100 -->
         <div class="gif-container">
-            <iframe src="https://tenor.com/embed/10515574674042168050" width="200" height="200" frameborder="0" class="tenor-gif-embed" allowfullscreen></iframe>
+            <iframe src="https://tenor.com/embed/10515574674042168050" frameborder="0" class="tenor-gif-embed" allowfullscreen></iframe>
         </div>
         <div class="buttons">
             <button class="yes" onclick="respuestaSi()">Sí</button>
