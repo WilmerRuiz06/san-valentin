@@ -25,10 +25,6 @@
             color: rgb(238, 238, 238);
             font-size: 2em;
         }
-        .image-container img {
-            width: 200px;
-            height: auto;
-        }
         .buttons {
             margin-top: 20px;
         }
@@ -48,10 +44,32 @@
             background: red;
             color: white;
         }
+        .gif-container {
+            background: rgba(223, 7, 43, 0.521);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .gif-container h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .gif-container iframe {
+            width: 480px;
+            height: 480px;
+        }
     </style>
     <script>
         function respuestaSi() {
-            document.body.innerHTML = "<h1 style='color: white;'>Ya sabia que si mi amor, nos vemos el 17 <3</h1>";
+            document.body.innerHTML = "<div class='gif-container'>" +
+                "<h2>Ya sabía que sí, mi amor. Nos vemos el 17 <3</h2>" +
+                "<iframe src='https://tenor.com/embed/8852310440228889797' frameBorder='0' class='tenor-gif-embed' allowFullScreen></iframe>" +
+                "</div>";
         }
 
         function respuestaNo() {
@@ -68,9 +86,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>¿Le gustaria ser mi San Valentín, preciosa?</h1>
-        <div class="image-container">
-            <img src='imagenes/gato.jpg' alt="Gato lindo" />
+        <h1>¿Le gustaría ser mi San Valentín, preciosa?</h1>
+        <!-- Primer cambio: El GIF de "Rizz" aquí -->
+        <div class="gif-container">
+            <iframe src="https://tenor.com/embed/10515574674042168050" width="200" height="200" frameborder="0" class="tenor-gif-embed" allowfullscreen></iframe>
         </div>
         <div class="buttons">
             <button class="yes" onclick="respuestaSi()">Sí</button>
