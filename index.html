@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('imagenes/sanvalentin.jpg') no-repeat center center/cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: rgba(223, 7, 43, 0.521);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: rgb(238, 238, 238);
+            font-size: 2em;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .yes {
+            background: green;
+            color: white;
+        }
+        .no {
+            background: red;
+            color: white;
+        }
+    </style>
+    <script>
+        function respuestaSi() {
+            document.body.innerHTML = "<h1 style='color: white;'>Ya sabia que si mi amor, nos vemos el 17 <3</h1>";
+        }
+
+        function respuestaNo() {
+            let botonSi = document.querySelector('.yes');
+            let botonNo = document.querySelector('.no');
+            
+            let sizeSi = parseFloat(window.getComputedStyle(botonSi).fontSize);
+            let sizeNo = parseFloat(window.getComputedStyle(botonNo).fontSize);
+            
+            botonSi.style.fontSize = (sizeSi + 5) + 'px';
+            botonNo.style.fontSize = (sizeNo - 2) + 'px';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Le gustaria ser mi San Valentín, preciosa?</h1>
+        <div class="image-container">
+            <img src='imagenes/gato.jpg' alt="Gato lindo" />
+        </div>
+        <div class="buttons">
+            <button class="yes" onclick="respuestaSi()">Sí</button>
+            <button class="no" onclick="respuestaNo()">No</button>
+        </div>
+    </div>
+</body>
+</html>
