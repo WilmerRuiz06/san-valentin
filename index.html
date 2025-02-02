@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Valentín</title>
+    <!-- Importando la fuente "Poppins" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -14,14 +16,14 @@
             height: 100vh;
             background: url('imagenes/sanvalentin.jpg') no-repeat center center/cover;
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif; /* Cambié la fuente aquí */
         }
         .container {
             background: rgba(223, 7, 43, 0.521);
             padding: 20px;
             border-radius: 10px;
             width: 90%;
-            max-width: 400px; 
+            max-width: 400px; /* Limitar el ancho máximo para pantallas grandes */
         }
         h1 {
             color: rgb(238, 238, 238);
@@ -62,8 +64,8 @@
             font-size: 1.5em;
         }
         .gif-container iframe {
-            width: 80%; 
-            max-width: 150px; 
+            width: 80%; /* Usamos un porcentaje para que se adapte al ancho disponible */
+            max-width: 150px; /* Limitar el ancho máximo para pantallas grandes */
             height: auto;
         }
     </style>
@@ -90,6 +92,7 @@
 <body>
     <div class="container">
         <h1>¿Le gustaría ser mi San Valentín, preciosa?</h1>
+        <!-- Primer GIF: el de "Rizz" con un tamaño flexible -->
         <div class="gif-container">
             <iframe src="https://tenor.com/embed/10515574674042168050" frameborder="0" class="tenor-gif-embed" allowfullscreen></iframe>
         </div>
